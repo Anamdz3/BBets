@@ -76,11 +76,16 @@ average=mean(sMyData2)
 
 <!--Explain and display the results of your method of coming up with the estimate of professor Brownlows betting profits!-->
 
-
-
-
-
-
+```{r}
+MyData3 = numeric(1000)
+for (i in 1:1000) {
+  MyData3[i] = BrLw(countoDo = 1,numClass = 29, odds =2)  
+}
+sMyData3 = sort(MyData3)
+low=sMyData3[25]
+high=sMyData3[975]
+middle=sMyData3[500]
+```
 
 
 # Discussion and Conclusion
